@@ -1,3 +1,5 @@
+import 'dart:io';
+
 void main(List<String> args) {
   /*
     -Ejercicio1 
@@ -14,7 +16,15 @@ void main(List<String> args) {
 
    */
 
-  String date = "1990";
+  // String date = "1990";
+  // int annoActual = DateTime.now().year;
+  // int formatDate = int.parse(date);
+  // int result = annoActual - formatDate;
+  // print("Tiene $result años");
+
+  //Con entradas de datos
+  print("Introduce tu año de nacimiento:");
+  String date = stdin.readLineSync()!;
   int annoActual = DateTime.now().year;
   int formatDate = int.parse(date);
   int result = annoActual - formatDate;
